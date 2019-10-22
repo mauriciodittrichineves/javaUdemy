@@ -31,6 +31,7 @@ public class gerando_matriz {
 		for (int i = 0; i < n ; i++) {
 			System.out.print(matriz[i][i]);
 		}
+		System.out.println("");
 		System.out.println("---------------------");
 		System.out.println("");
 		// Contando a Quantidade de negativos.
