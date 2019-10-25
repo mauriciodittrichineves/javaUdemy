@@ -50,6 +50,7 @@ public class Application {
 			for (Object contr : list) {
 				System.out.println(contr);
 			} 
+			sc.close();
 		}
 
 }
