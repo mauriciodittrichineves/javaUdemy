@@ -5,17 +5,15 @@ public class Employee {
 	private Integer hours;
 	private Double valuePerHour;
 	protected Double salaryEmployee;
-	
 
 	public Employee() {
-
+		super();
 	}
 
 	public Employee(String name, Integer hours, Double valuePerHour, Double salaryEmployee) {
 		this.name = name;
 		this.hours = hours;
 		this.valuePerHour = valuePerHour;
-		
 	}
 
 	public String getName() {
@@ -42,18 +40,13 @@ public class Employee {
 		this.valuePerHour = valuePerHour;
 	}
 
-	
-
-	
-
 	public double payment(int hours, double valuePerHour) {
-		  salaryEmployee = hours * valuePerHour;
-		 return salaryEmployee;
+		salaryEmployee = hours * valuePerHour;
+		return salaryEmployee;
 	}
-	
+
 	public String toString() {
 		return getName() + " - " + payment(hours, valuePerHour);
 	}
-	
 
 }
