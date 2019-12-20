@@ -1,0 +1,21 @@
+package com.example.curso;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CourseApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CourseApplication.class, args);
+		
+		LocalDate iInicial = LocalDate.now();
+		LocalDate localDateAntigo = LocalDate.of(2019, 12, 12);
+		Period periodo = Period.between(localDateAntigo, iInicial);
+		System.out.println(periodo);
+	}
+
+}

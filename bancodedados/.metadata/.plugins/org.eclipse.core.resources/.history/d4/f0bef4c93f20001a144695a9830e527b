@@ -1,0 +1,5 @@
+package com.example.curso.entities;
+
+public class User {
+
+}

@@ -1,0 +1,5 @@
+package com.example.curso.repositories;
+
+public class UserRepository {
+
+}

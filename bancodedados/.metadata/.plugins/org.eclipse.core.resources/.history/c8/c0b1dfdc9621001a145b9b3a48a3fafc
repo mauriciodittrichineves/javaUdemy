@@ -1,0 +1,48 @@
+package com.example.curso;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.Period;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CourseApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CourseApplication.class, args);
+		
+		LocalDate iInicial = LocalDate.now();
+		LocalDate localDateAntigo = LocalDate.of(2019, 12, 12);
+		Period periodo = Period.between(iInicial, localDateAntigo);
+		Instant tempoInicial = Instant.now();
+		Instant tempoFinal = Instant.
+			
+		
+		
+		 int dias = null;
+		switch (periodo.toString()) {	
+		case "P-1D":
+			dias = 1;			
+			break;
+		case "P-2D":
+			dias = 2;			
+			break;
+		case "P-3D":
+			dias = 3;			
+			break;
+		case "P-4D":
+			dias = 4;			
+			break;
+		case "P-5D":
+			dias = 5;			
+			break;
+
+		default:
+			break;
+		}
+		System.out.println("***** DATA CALCULADA******" + dias);
+	}
+
+}
